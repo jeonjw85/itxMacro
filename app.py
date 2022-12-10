@@ -48,7 +48,7 @@ try:
 
     if dt.strftime("%m") == "12": nxtmonth = "01"
     else: nxtmonth = dt.strftime("%m")+1
-    driver.find_element(By.XPATH, xpath4 % (nxtmonth, dt.strftime("%d"))).click()
+    driver.find_element(By.XPATH, "//span[@id='d2023%s%s']" % (nxtmonth, dt.strftime("%d"))).click()
     time.sleep(0.7)
 
     driver.switch_to.window(driver.window_handles[0])
