@@ -8,9 +8,9 @@ import json
 options = webdriver.ChromeOptions()
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
 options.add_argument('user-agent=' + user_agent)
-# options.add_argument("--headless")
-# options.add_argument("no-sandbox")
-# options.add_argument('--mute-audio')
+options.add_argument("--headless")
+options.add_argument("no-sandbox")
+options.add_argument('--mute-audio')
 
 def itx():
     try:
