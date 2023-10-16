@@ -17,9 +17,10 @@ def auto():
             app.itx()
     else:
         print("ERROR - 접속실패")
-        
+# auto()
 schedule.every().day.at("07:00").do(auto)
-schedule.every().day.at("07:03").do(auto)
+schedule.every().day.at("07:01").do(auto)
+schedule.every().day.at("07:02").do(auto)
 
 while True:
     schedule.run_pending()
