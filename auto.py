@@ -8,7 +8,7 @@ def auto():
     response = requests.get(url)
 
     if response.status_code == 200:
-        html = response.text
+        html = response.textㅇ
         result = BeautifulSoup(html, "html.parser")
         if str(result) == "x":
             print("토,일에는 예매하지않음")
