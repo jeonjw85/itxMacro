@@ -1,3 +1,3 @@
-# LetsITX
+# itxMacro
 
 레츠코레일 홈페이지에서 평내호평->용산 ITX 자동예매
